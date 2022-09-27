@@ -27,6 +27,7 @@ body{
     width: 100%;
     background-image: url(../asset/bg1.png);
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .bg-2 {
@@ -38,12 +39,12 @@ body{
 }
 
 .hov img {
-    display: none;
+    visibility: hidden;
     position: absolute;
 }
 
 .hov img:hover img {
-    display: block;
+    visibility: visible;
 }
 
 .aku {
