@@ -1,27 +1,21 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    animation: changeBg 7s infinite
+    animation: changeBg 4s infinite
     alternate linear;
 }
 
 @keyframes changeBg{
     0% {
-        background: rgb(217, 241, 155);
-    }
-    25% {
-        background: rgb(193, 168, 218);
+        background: rgb(255, 171, 171);
     }
     50% {
-        background: rgb(255, 184, 231);
-    }
-    75% {
-        background: rgb(189, 174, 255);
+        background: rgb(193, 190, 241);
     }
 }
 
 .navbar{
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(237, 237, 237);
     height: 50px;
     position: fixed;
     top: 0;
@@ -41,6 +35,24 @@ body{
     background-image: url(../asset/circle.png);
     background-repeat: no-repeat;
     /* position: relative; >>dalam suatu keadaan digunakan untuk menaruhnya dibawah konten dengan tax position absolute */
+}
+
+.hov img {
+    display: none;
+    position: absolute;
+}
+
+.hov img:hover img {
+    display: block;
+}
+
+.aku {
+    position: absolute;
+    filter: brightness(2.5);
+    height: 200px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 80px;
 }
 
 .ikon {
@@ -106,6 +118,10 @@ body{
     width: 100px;
 }
 
+.krt {
+    margin-left: 400px;
+}
+
 .welcome{
     background-color: rgb(255, 255, 255);
     justify-content: center;
@@ -118,9 +134,13 @@ body{
     height: 300px;
 }
 
+.img {
+    height: 350px;
+    width: 300px;
+}
+
 .footer{
     position: center;
-    height: 200px;
     width: 500px;
     background-color: rgb(255, 227, 141);
     text-align: center;
